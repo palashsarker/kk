@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <parameter name="browserName" value="chrome"/>
+  <test parallel="tests" name="Test1(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.testng2.NewMu">
+        <methods>
+          <include name="aa"/>
+          <include name="first"/>
+        </methods>
+      </class> <!-- com.testng2.NewMu -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
