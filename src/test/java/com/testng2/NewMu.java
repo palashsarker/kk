@@ -3,6 +3,7 @@ package com.testng2;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -24,6 +25,10 @@ public class NewMu {
 		else if(name.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver","C:\\Users\\palsa\\eclipse-workspaceNew\\com.usa.libraryone\\AllDriver\\geckodriver.exe");
 			driver = new FirefoxDriver();
+		}
+		else if(name.equals("ie")) {
+			System.setProperty("webdriver.gecko.driver","C:\\Users\\palsa\\eclipse-workspaceNew\\com.usa.libraryone\\AllDriver\\geckodriver.exe");
+			driver = new InternetExplorerDriver();
 		}
 	}
 
